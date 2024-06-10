@@ -1,0 +1,12 @@
+{
+  "name": "@clite/root",
+  "version": "0.1.0",
+  "description": "Lite clients for API services.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Giorgio Garasto (Dabolus) <giorgio@garasto.me>",
+  "license": "MIT"
+}
