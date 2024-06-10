@@ -1,0 +1,27 @@
+{
+  "name": "@clite/config",
+  "version": "0.1.0",
+  "description": "Common configuration for Clite packages",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dabolus/clite.git",
+    "directory": "packages/config"
+  },
+  "funding": "https://github.com/sponsors/Dabolus",
+  "author": {
+    "name": "Giorgio Garasto (Dabolus)",
+    "email": "giorgio@garasto.me",
+    "url": "https://giorgio.garasto.me"
+  },
+  "private": true,
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

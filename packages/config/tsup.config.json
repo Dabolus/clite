@@ -1,0 +1,9 @@
+{
+  "entry": ["src/**/*.ts", "!src/**/*.test.ts"],
+  "outDir": "lib",
+  "format": "esm",
+  "experimentalDts": true,
+  "splitting": true,
+  "sourcemap": true,
+  "clean": true
+}

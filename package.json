@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Giorgio Garasto (Dabolus) <giorgio@garasto.me>",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@4.2.2"
 }
