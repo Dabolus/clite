@@ -63,7 +63,7 @@ export class FakeYou {
     return json[resultField];
   };
 
-  async login(usernameOrEmail: string, password: string): Promise<void> {
+  async init(usernameOrEmail: string, password: string): Promise<FakeYou> {
     const res = await this.fetchFakeYouApi('v1/login', {
       method: 'POST',
       body: {
@@ -78,9 +78,10 @@ export class FakeYou {
     this.sessionCookie = res.headers
       .get('set-cookie')
       ?.match(/^\w+.=([^;]+)/)?.[1];
+    return this;
   }
 
-  async logout(): Promise<void> {
+  async deinit(): Promise<FakeYou> {
     const res = await this.fetchFakeYouApi('v1/logout', {
       method: 'POST',
     });
@@ -89,6 +90,7 @@ export class FakeYou {
       throw new Error('Logout failed');
     }
     this.sessionCookie = undefined;
+    return this;
   }
 
   listModels(): Promise<Model[]> {
