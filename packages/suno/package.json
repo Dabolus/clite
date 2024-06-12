@@ -1,0 +1,40 @@
+{
+  "name": "@clite/suno",
+  "version": "0.1.0",
+  "description": "Lite client for the Suno API.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dabolus/clite.git",
+    "directory": "packages/suno"
+  },
+  "funding": "https://github.com/sponsors/Dabolus",
+  "author": {
+    "name": "Giorgio Garasto (Dabolus)",
+    "email": "giorgio@garasto.me",
+    "url": "https://giorgio.garasto.me"
+  },
+  "exports": {
+    "types": "./lib/index.d.ts",
+    "default": "./lib/index.js"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@clite/config": "workspace:*",
+    "@microsoft/api-extractor": "^7.47.0",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5"
+  }
+}

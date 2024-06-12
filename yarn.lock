@@ -30,6 +30,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@clite/suno@workspace:packages/suno":
+  version: 0.0.0-use.local
+  resolution: "@clite/suno@workspace:packages/suno"
+  dependencies:
+    "@clite/config": "workspace:*"
+    "@microsoft/api-extractor": "npm:^7.47.0"
+    tsup: "npm:^8.1.0"
+    typescript: "npm:^5.4.5"
+  languageName: unknown
+  linkType: soft
+
 "@esbuild/aix-ppc64@npm:0.21.5":
   version: 0.21.5
   resolution: "@esbuild/aix-ppc64@npm:0.21.5"
