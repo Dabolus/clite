@@ -23,8 +23,7 @@
     "node": ">=18"
   },
   "files": [
-    "index.js",
-    "index.d.ts"
+    "lib"
   ],
   "scripts": {
     "build": "tsup"
